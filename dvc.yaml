@@ -1,0 +1,16 @@
+stages:
+  training:
+    cmd: python src/INCOMEPREDICTION/pipeline/training_pipeline.py
+    deps: 
+      - src/INCOMEPREDICTION/pipeline/training_pipeline.py
+      - src/INCOMEPREDICTION/component/data_ingestion.py
+      - src/INCOMEPREDICTION/component/data_transformation.py
+      - src/INCOMEPREDICTION/component/model_evaluation.py
+      - src/INCOMEPREDICTION/component/model_trainer.py
+
+    outs:
+      - artifacts/raw.csv
+      - artifacts/test.csv
+      - artifacts/train.csv
+      - artifacts/preprocessor.pkl
+      - artifacts/model.pkl

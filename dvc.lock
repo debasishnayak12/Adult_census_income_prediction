@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  training:
+    cmd: python src/INCOMEPREDICTION/pipeline/training_pipeline.py
+    deps:
+    - path: src/INCOMEPREDICTION/component/data_ingestion.py
+      hash: md5
+      md5: 11a15c43f9524466c492a3766389a69d
+      size: 1731
+    - path: src/INCOMEPREDICTION/component/data_transformation.py
+      hash: md5
+      md5: 8e46d58fc411ad4c97159180c00eb5c9
+      size: 5364
+    - path: src/INCOMEPREDICTION/component/model_evaluation.py
+      hash: md5
+      md5: a29b3bd04a944bf10adc352e38a33041
+      size: 1565
+    - path: src/INCOMEPREDICTION/component/model_trainer.py
+      hash: md5
+      md5: 014e904f0ea5958f1bf8a1f86d54a938
+      size: 2686
+    - path: src/INCOMEPREDICTION/pipeline/training_pipeline.py
+      hash: md5
+      md5: 7b6af11e15fd31177f4dbd85f489ddd1
+      size: 874
+    outs:
+    - path: artifacts/model.pkl
+      hash: md5
+      md5: 74d9f0c624b859896459faedf2ee36ff
+      size: 3837955
+    - path: artifacts/preprocessor.pkl
+      hash: md5
+      md5: 3f273e8f1f85ff8e3ec4952c7b807e77
+      size: 3561
+    - path: artifacts/raw.csv
+      hash: md5
+      md5: 87bf3841e017d0ac85b643a653459b03
+      size: 3844210
+    - path: artifacts/test.csv
+      hash: md5
+      md5: 025a2df3d604c6c15f6e3f6feb26f441
+      size: 1208821
+    - path: artifacts/train.csv
+      hash: md5
+      md5: 11ae4c0302c45526a93f9a4513a4f51d
+      size: 2819797
