@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Adult_census_income_pred/mlruns/0/07c0a55e0d534a5aa88dc93489a2130d/artifacts
+end_time: 1705679094306
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 07c0a55e0d534a5aa88dc93489a2130d
+run_name: upbeat-dove-467
+run_uuid: 07c0a55e0d534a5aa88dc93489a2130d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705679081713
+status: 3
+tags: []
+user_id: madhu
